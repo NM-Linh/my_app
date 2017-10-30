@@ -7,10 +7,9 @@ import Hello from './Hello'
 
 ReactDOM.render(
   <Router history={browserHistory}>
-      <Router path="/" component={Hello}>
-          <IndexRoute component={Hello} />
-          <Route path="/game" component={Game}/>
-      </Router>
+          {/*<IndexRoute component={Game} />*/}
+      <Route path="/" component={Hello}/>
+      <Route path="/game" component={Game}/>
   </Router>,
   document.getElementById('root')
 );
